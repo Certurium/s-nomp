@@ -48,12 +48,12 @@
         "nonce": "^1.0.4",
         "redis": "^2.8.0",
         "request": "^2.88.0",
-        "stratum-pool": "git+https://github.com/s-nomp/node-stratum-pool.git"
+        "stratum-pool": "git+https://github.com/Certurium/node-stratum-pool-s-nomp.git"
     },
     "engines": {
         "node": ">=8.11"
     },
     "scripts": {
-        "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/node_modules/stratum-pool/node_modules/equihashverify/build/Release/:$PWD/node_modules/equihashverify/build/Release/ node init.js"
+        "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH node init.js"
     }
 }
